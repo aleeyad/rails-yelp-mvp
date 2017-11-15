@@ -1,0 +1,18 @@
+
+<div class="text-center">
+  <h5>Add your review</h5>
+</div>
+
+<div class="container">
+  <div class="row padded">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <%= simple_form_for([@restaurant, @review], html: {class: 'form-horizontal'}) do |f| %>
+      <%= f.input :content %>
+      <%= f.input :rating %>
+      <%= f.submit "Add review", class: "btn btn-primary" %>
+      <%end%>
+    </div>
+  </div>
+</div>
+
+

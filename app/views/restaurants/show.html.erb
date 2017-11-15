@@ -1,0 +1,7 @@
+<div class="text-center">
+<h4><%= @restaurant[:name]%></h4>
+<h5>Address: <%= @restaurant[:address] %> </h5>
+<h5>Category: <%= @restaurant[:category] %> </h5>
+<h5>Review: <%= Review.find(restaurant_id[:id] %> </h5>
+<h5><%= link_to "Add a review", new_restaurant_review_path(@restaurant[:id]) %></h5>
+</div>

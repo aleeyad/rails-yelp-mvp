@@ -1,0 +1,7 @@
+<h1 class="text-center">Restaurants</h1>
+<ul>
+  <% @restaurants.each do |a| %>
+  <li><strong>Name:</strong>  <%= a[:name] %> <strong>Address:</strong>  <%= a[:address] %> <strong>Category:</strong>  <%= a[:category].titlecase %>  <%= link_to "See Details", restaurant_path(a[:id]) %></li>
+  <% end %>
+</ul>
+
